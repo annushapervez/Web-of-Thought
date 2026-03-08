@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState } from "react"
 import {
   Background,
+  BackgroundVariant,
   Controls,
   ReactFlow,
   Position,
@@ -154,8 +155,7 @@ y: 120 + (article.position.y - 120) * 1.14,
         }}
         onPaneClick={() => setHoveredNode(null)}
       >
-        <Background variant="dots" color="#c7bbab" gap={30} size={1} />
-        <Controls showInteractive={false} />
+<Background variant={BackgroundVariant.Dots} color="#c7bbab" gap={30} size={1} />      
       </ReactFlow>
     </div>
   )
